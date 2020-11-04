@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp5.0</TargetFramework>
+    <RootNamespace>HomeBudget.MonthBudget.Domain</RootNamespace>
+    <LangVersion>9</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HomeBudget.Logic.Core\HomeBudget.Core.csproj" />
+  </ItemGroup>
+
+</Project>

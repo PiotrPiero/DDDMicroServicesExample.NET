@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\p_pie\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\p_pie\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_HomeBudget.1346122988.00" t="ExcludeRecursive" />
+    <e p="C:\Users\p_pie\source\repos\HomeBudget" t="IncludeFlat">
+      <e p="Account" t="Include" />
+      <e p="HomeBudget.Account.API" t="IncludeRecursive">
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="WeatherForecastController.cs" t="Include" />
+        </e>
+        <e p="HomeBudget.Account.API.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp5.0" t="Include">
+              <e p="HomeBudget.Account.API.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+        <e p="WeatherForecast.cs" t="Include" />
+      </e>
+      <e p="HomeBudget.Account.Domain" t="IncludeRecursive">
+        <e p="Aggregates" t="Include">
+          <e p="AccountAggregate" t="Include">
+            <e p="Account.cs" t="Include" />
+            <e p="AccountType.cs" t="Include" />
+            <e p="IAccountRepository.cs" t="Include" />
+            <e p="TransferId.cs" t="Include" />
+          </e>
+          <e p="TransferAggregate" t="Include">
+            <e p="AccountId.cs" t="Include" />
+            <e p="ITransferRepository.cs" t="Include" />
+            <e p="Transfer.cs" t="Include" />
+            <e p="TransferValue.cs" t="Include" />
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="HomeBudget.Account.Domain.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp5.0" t="Include">
+              <e p="HomeBudget.Account.Domain.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="HomeBudget.Account.Infrastructure" t="IncludeRecursive">
+        <e p="AccountContext.cs" t="Include" />
+        <e p="AccountEntityTypeConfiguration.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="HomeBudget.Account.Infrastructure.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp5.0" t="Include">
+              <e p="HomeBudget.Account.Infrastructure.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="TransferEntityTypeConfiguration.cs" t="Include" />
+      </e>
+      <e p="HomeBudget.API" t="IncludeRecursive">
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="WeatherForecastController.cs" t="Include" />
+        </e>
+        <e p="DomainEventsHandlers" t="Include">
+          <e p="FinOperationAddedDomainEvent.cs" t="Include" />
+        </e>
+        <e p="HomeBudget.MonthBudget.API.csproj" t="IncludeRecursive" />
+        <e p="Integration" t="Include">
+          <e p="MonthBudgetIntegrationService.cs" t="Include" />
+          <e p="TransactionBehaviour.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp5.0" t="Include">
+              <e p="HomeBudget.MonthBudget.API.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+        <e p="WeatherForecast.cs" t="Include" />
+      </e>
+      <e p="HomeBudget.DataAccess.MonthBudgetDataAccess" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="BudgetPlanEntityTypeConfiguration.cs" t="Include" />
+        <e p="FinOperationEntityTypeConfiguration.cs" t="Include" />
+        <e p="HomeBudget.MonthBudget.Infrastructure.csproj" t="IncludeRecursive" />
+        <e p="MonthBudgetContext.cs" t="Include" />
+        <e p="MonthBudgetEntityTypeConfiguration.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp5.0" t="Include">
+              <e p="HomeBudget.MonthBudget.Infrastructure.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="HomeBudget.Integration" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="DomainEventDispatcher.cs" t="Include" />
+        <e p="FinOperationEvents" t="Include">
+          <e p="FinOperationAddedIntegrationEvent.cs" t="Include" />
+          <e p="FinOperationEvent.cs" t="Include" />
+        </e>
+        <e p="HomeBudget.Integration.csproj" t="IncludeRecursive" />
+        <e p="IEventBus.cs" t="Include" />
+        <e p="IIntegrationEvent.cs" t="Include" />
+        <e p="IIntegrationEventHandler.cs" t="Include" />
+        <e p="IIntegrationService.cs" t="Include" />
+        <e p="Logging" t="Include">
+          <e p="EventStatus.cs" t="Include" />
+          <e p="IIntegrationEventLogger.cs" t="Include" />
+          <e p="IntegrationEventLog.cs" t="Include" />
+          <e p="IntegrationEventLogContext.cs" t="Include" />
+          <e p="IntegrationEventLogEntityTypeConfiguration.cs" t="Include" />
+          <e p="IntegrationEventLogger.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="net5.0" t="Include">
+              <e p="HomeBudget.Integration.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="HomeBudget.Logic.Core" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="HomeBudget.Core.csproj" t="IncludeRecursive" />
+        <e p="IAggregateRoot.cs" t="Include" />
+        <e p="IDomainEvent.cs" t="Include" />
+        <e p="IEntity.cs" t="Include" />
+        <e p="Impl" t="Include">
+          <e p="AggregateRoot.cs" t="Include" />
+          <e p="Entity.cs" t="Include" />
+        </e>
+        <e p="IValueObject.cs" t="Include" />
+        <e p="Models" t="Include">
+          <e p="AppUser.cs" t="Include" />
+          <e p="Currency.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp5.0" t="Include">
+              <e p="HomeBudget.Core.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="HomeBudget.Logic.Models" t="IncludeRecursive">
+        <e p="Aggregates" t="Include">
+          <e p="MonthBudgetAggregate" t="Include">
+            <e p="BudgetCategory.cs" t="Include" />
+            <e p="BudgetPlan.cs" t="Include" />
+            <e p="FinOperation.cs" t="Include" />
+            <e p="FinOperationType.cs" t="Include" />
+            <e p="FinOperationValue.cs" t="Include" />
+            <e p="IMonthBudgetRepository.cs" t="Include" />
+            <e p="MonthBudget.cs" t="Include" />
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Events" t="Include">
+          <e p="FinOperationAddedDomainEvent.cs" t="Include" />
+        </e>
+        <e p="HomeBudget.MonthBudget.Domain.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp5.0" t="Include">
+              <e p="HomeBudget.MonthBudget.Domain.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="HomeBudget.sln" t="IncludeFlat" />
+      <e p="HomeBudget.UI" t="IncludeRecursive">
+        <e p="_Imports.razor" t="Include" />
+        <e p="App.razor" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="HomeBudget.UI.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp5.0" t="Include">
+              <e p="HomeBudget.UI.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Pages" t="Include">
+          <e p="Counter.razor" t="Include" />
+          <e p="FetchData.razor" t="Include" />
+          <e p="Index.razor" t="Include" />
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Shared" t="Include">
+          <e p="MainLayout.razor" t="Include" />
+          <e p="NavMenu.razor" t="Include" />
+          <e p="SurveyPrompt.razor" t="Include" />
+        </e>
+        <e p="wwwroot" t="Include">
+          <e p="css" t="Include">
+            <e p="app.css" t="Include" />
+            <e p="bootstrap" t="Include">
+              <e p="bootstrap.min.css" t="Include" />
+              <e p="bootstrap.min.css.map" t="Include" />
+            </e>
+            <e p="open-iconic" t="Include">
+              <e p="font" t="Include">
+                <e p="css" t="Include">
+                  <e p="open-iconic-bootstrap.min.css" t="Include" />
+                </e>
+                <e p="fonts" t="Include">
+                  <e p="open-iconic.eot" t="Include" />
+                  <e p="open-iconic.otf" t="Include" />
+                  <e p="open-iconic.svg" t="Include" />
+                  <e p="open-iconic.ttf" t="Include" />
+                  <e p="open-iconic.woff" t="Include" />
+                </e>
+              </e>
+              <e p="FONT-LICENSE" t="Include" />
+              <e p="ICON-LICENSE" t="Include" />
+              <e p="README.md" t="Include" />
+            </e>
+          </e>
+          <e p="favicon.ico" t="Include" />
+          <e p="icon-512.png" t="Include" />
+          <e p="index.html" t="Include" />
+          <e p="manifest.json" t="Include" />
+          <e p="sample-data" t="Include">
+            <e p="weather.json" t="Include" />
+          </e>
+          <e p="service-worker.js" t="Include" />
+          <e p="service-worker.published.js" t="Include" />
+        </e>
+      </e>
+      <e p="MonthBudget" t="Include">
+        <e p="UI" t="Include" />
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
