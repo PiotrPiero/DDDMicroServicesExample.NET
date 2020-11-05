@@ -11,8 +11,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeBudget.UI", "HomeBudget
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeBudget.MonthBudget.Domain", "HomeBudget.Logic.Models\HomeBudget.MonthBudget.Domain.csproj", "{1F49ADFA-B8CB-47A9-A5B1-A09A9CEF7C38}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeBudget.Core", "HomeBudget.Logic.Core\HomeBudget.Core.csproj", "{BB298CBA-78A2-4B50-A723-C9F7ED4460D2}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeBudget.MonthBudget.Infrastructure", "HomeBudget.DataAccess.MonthBudgetDataAccess\HomeBudget.MonthBudget.Infrastructure.csproj", "{8870AB6E-13B7-4928-B759-CDEBEBE6321C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MonthBudget", "MonthBudget", "{89DB9E96-F675-4793-AF26-8B7CDF0FD434}"
@@ -26,6 +24,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeBudget.Account.API", "HomeBudget.Account.API\HomeBudget.Account.API.csproj", "{792A9F9F-ED03-48DF-B509-F0D73411C1BF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeBudget.Integration", "HomeBudget.Integration\HomeBudget.Integration.csproj", "{D2D5B166-4FBE-44E2-9C7D-70750E151F81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeBudget.Core", "HomeBudget.Core\HomeBudget.Core.csproj", "{FA56BEA0-7935-4DFA-BD00-E6E74DFDC99E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,10 +45,6 @@ Global
 		{1F49ADFA-B8CB-47A9-A5B1-A09A9CEF7C38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F49ADFA-B8CB-47A9-A5B1-A09A9CEF7C38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F49ADFA-B8CB-47A9-A5B1-A09A9CEF7C38}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BB298CBA-78A2-4B50-A723-C9F7ED4460D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BB298CBA-78A2-4B50-A723-C9F7ED4460D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BB298CBA-78A2-4B50-A723-C9F7ED4460D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BB298CBA-78A2-4B50-A723-C9F7ED4460D2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8870AB6E-13B7-4928-B759-CDEBEBE6321C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8870AB6E-13B7-4928-B759-CDEBEBE6321C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8870AB6E-13B7-4928-B759-CDEBEBE6321C}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -69,6 +65,10 @@ Global
 		{D2D5B166-4FBE-44E2-9C7D-70750E151F81}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2D5B166-4FBE-44E2-9C7D-70750E151F81}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D2D5B166-4FBE-44E2-9C7D-70750E151F81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA56BEA0-7935-4DFA-BD00-E6E74DFDC99E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA56BEA0-7935-4DFA-BD00-E6E74DFDC99E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA56BEA0-7935-4DFA-BD00-E6E74DFDC99E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA56BEA0-7935-4DFA-BD00-E6E74DFDC99E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

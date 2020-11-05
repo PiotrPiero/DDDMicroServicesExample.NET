@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\HomeBudget.Account.Domain\HomeBudget.Account.Domain.csproj" />
+    <ProjectReference Include="..\HomeBudget.Core\HomeBudget.Core.csproj" />
   </ItemGroup>
 
 </Project>

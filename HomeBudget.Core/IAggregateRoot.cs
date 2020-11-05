@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace HomeBudget.Core.Impl
+namespace HomeBudget.Core
 {
     public interface IAggregateRoot : IEntity
     {
