@@ -6,11 +6,22 @@
     <projectFile>HomeBudget.Account.API/HomeBudget.Account.API.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bde599f0-2bd1-4bc3-b5ed-9ff448781b61" name="Default Changelist" comment="" />
+    <list default="true" id="bde599f0-2bd1-4bc3-b5ed-9ff448781b61" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HomeBudget/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HomeBudget/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HomeBudget/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HomeBudget/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeBudget.Account.API/HomeBudget.Account.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/HomeBudget.Account.API/HomeBudget.Account.API.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeBudget.MonthBudget.API/HomeBudget.MonthBudget.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/HomeBudget.MonthBudget.API/HomeBudget.MonthBudget.API.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeBudget.MonthBudget.Domain/HomeBudget.MonthBudget.Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/HomeBudget.MonthBudget.Domain/HomeBudget.MonthBudget.Domain.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeBudget.MonthBudget.Infrastructure/HomeBudget.MonthBudget.Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/HomeBudget.MonthBudget.Infrastructure/HomeBudget.MonthBudget.Infrastructure.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeBudget.sln" beforeDir="false" afterPath="$PROJECT_DIR$/HomeBudget.sln" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/760DCDFB-2F2B-4C8D-9D3B-A922FA70B507/231/EntityEntry`.cs" root0="SKIP_HIGHLIGHTING" />
@@ -19,9 +30,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/HomeBudget.Logic.Core/Impl/AggregateRoot.cs" />
-        <option value="$PROJECT_DIR$/HomeBudget.Logic.Models/Events/FinOperationRemoved.cs" />
-        <option value="$PROJECT_DIR$/HomeBudget.Account.Domain/Aggregates/AccountAggregate/TransferId.cs" />
         <option value="$PROJECT_DIR$/HomeBudget.Logic.Core/Impl/ValueObject.cs" />
         <option value="$PROJECT_DIR$/HomeBudget.Logic.Models/Aggregates/MonthBudgetAggregate/FinOperationValue.cs" />
         <option value="$PROJECT_DIR$/HomeBudget.DataAccess.MonthBudgetDataAccess/FinOperationEntityTypeConfiguration.cs" />
@@ -70,10 +78,14 @@
         <option value="$PROJECT_DIR$/HomeBudget.API/Integration/TransactionBehaviour.cs" />
         <option value="$PROJECT_DIR$/HomeBudget.API/DomainEventsHandlers/FinOperationAddedDomainEvent.cs" />
         <option value="$PROJECT_DIR$/HomeBudget.Integration/DomainEventDispatcher.cs" />
+        <option value="$PROJECT_DIR$/HomeBudget.Core/IAggregateRoot.cs" />
+        <option value="$PROJECT_DIR$/HomeBudget.Account.API/HomeBudget.Account.API.csproj" />
+        <option value="$PROJECT_DIR$/HomeBudget.MonthBudget.Infrastructure/MonthBudgetContext.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1jmXVcLiMzagiEavMLtQUsww62u" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -188,6 +200,7 @@
       <updated>1604410265785</updated>
       <workItem from="1604410270738" duration="13997000" />
       <workItem from="1604511947718" duration="10040000" />
+      <workItem from="1604565660751" duration="736000" />
     </task>
     <servers />
   </component>
@@ -200,6 +213,10 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1026" y="562" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1604566040441">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1026" y="562" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.0.2560.1400@0.0.2560.1400" timestamp="1604566040441" />
     <state width="2517" height="423" key="GridCell.Tab.0.bottom" timestamp="1604492591451">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

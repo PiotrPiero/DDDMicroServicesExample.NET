@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\HomeBudget.Logic.Models\HomeBudget.MonthBudget.Domain.csproj" />
+    <ProjectReference Include="..\HomeBudget.MonthBudget.Domain\HomeBudget.MonthBudget.Domain.csproj" />
   </ItemGroup>
 
 </Project>

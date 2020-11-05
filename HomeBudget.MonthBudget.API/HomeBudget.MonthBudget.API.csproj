@@ -16,10 +16,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\HomeBudget.DataAccess.MonthBudgetDataAccess\HomeBudget.MonthBudget.Infrastructure.csproj" />
     <ProjectReference Include="..\HomeBudget.Integration\HomeBudget.Integration.csproj" />
-    <ProjectReference Include="..\HomeBudget.Logic.Core\HomeBudget.Core.csproj" />
-    <ProjectReference Include="..\HomeBudget.Logic.Models\HomeBudget.MonthBudget.Domain.csproj" />
+    <ProjectReference Include="..\HomeBudget.MonthBudget.Domain\HomeBudget.MonthBudget.Domain.csproj" />
+    <ProjectReference Include="..\HomeBudget.MonthBudget.Infrastructure\HomeBudget.MonthBudget.Infrastructure.csproj" />
   </ItemGroup>
 
 
