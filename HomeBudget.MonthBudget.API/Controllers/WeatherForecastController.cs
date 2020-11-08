@@ -6,6 +6,8 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using HomeBudget.Integration;
+using MediatR;
 
 namespace HomeBudget.API.Controllers
 {
@@ -14,6 +16,8 @@ namespace HomeBudget.API.Controllers
     public class WeatherForecastController : ControllerBase
     {
         MonthBudgetContext _ctx;
+        private readonly IMediator _mediator;
+
         private static readonly string[] Summaries = new[]
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
@@ -21,12 +25,11 @@ namespace HomeBudget.API.Controllers
 
         private readonly ILogger<WeatherForecastController> _logger;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger, MonthBudgetContext ctx)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, MonthBudgetContext ctx, IMediator mediator)
         {
             _logger = logger;
             _ctx = ctx;
-
-
+            _mediator = mediator;
         }
 
         [HttpGet]
@@ -42,7 +45,7 @@ namespace HomeBudget.API.Controllers
 
             m.AddOperation(new FinOperationValue(100, 77), "Główne",FinOperationType.Expense, DateTime.Now, 1, _ctx.BudgetCategories.First(), "testowy wydatek 1", "opis");
 
-            _ctx.SaveChanges();
+            _mediator.DispatchDomainEventsAsync(_ctx);
             return null;
         }
     }

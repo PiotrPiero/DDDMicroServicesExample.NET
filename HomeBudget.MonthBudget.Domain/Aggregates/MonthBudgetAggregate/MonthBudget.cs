@@ -39,7 +39,7 @@ namespace HomeBudget.MonthBudget.Domain.Aggregates.MonthBudgetAggregate
 
             _finOperations.Add(newOperation);
 
-            DomainEvents.Add(new FinOperationAddedDomainEvent(newOperation.Id.Value, newOperation.MonthBudget.Id.Value, accountName));
+            DomainEvents.Add(new FinOperationAddedDomainEvent(newOperation, accountName));
         }
 
         public void RemoveOperation(int operationId)

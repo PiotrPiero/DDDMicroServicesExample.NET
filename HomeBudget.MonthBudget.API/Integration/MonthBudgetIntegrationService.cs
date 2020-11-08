@@ -13,10 +13,10 @@ namespace HomeBudget.MonthBudget.API.Integration
         private readonly IIntegrationEventLogger _integrationLogger;
         private readonly MonthBudgetContext _monthBudgetContext;
         private readonly IEventBus _eventBus;
-        private readonly ILogger _logger;
+        private readonly ILogger<MonthBudgetIntegrationService> _logger;
         
         public MonthBudgetIntegrationService(IEventBus eventBus,
-            ILogger logger,
+            ILogger<MonthBudgetIntegrationService> logger,
             IIntegrationEventLogger integrationLogger,
             MonthBudgetContext monthBudgetContext
             )

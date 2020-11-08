@@ -1,17 +1,16 @@
 ﻿using HomeBudget.Core;
+using HomeBudget.MonthBudget.Domain.Aggregates.MonthBudgetAggregate;
 
 namespace HomeBudget.MonthBudget.Domain.Events
 {
     public class FinOperationAddedDomainEvent: IDomainEvent
     {
-        public FinOperationAddedDomainEvent(int finOperationId, int monthBudgetId, string accountName)
+        public FinOperationAddedDomainEvent(FinOperation finOperation, string accountName)
         {
-            FinOperationId = finOperationId;
-            MonthBudgetId = monthBudgetId;
+            FinOperation = finOperation;
             AccountName = accountName;
         }
-        public int FinOperationId { get; private set; }
-        public int MonthBudgetId { get; private set; }
+        public FinOperation FinOperation { get; private set; }
         public string AccountName { get;  }
     }
 }

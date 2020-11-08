@@ -5,15 +5,46 @@
     <projectFile>HomeBudget.API/HomeBudget.MonthBudget.API.csproj</projectFile>
     <projectFile>HomeBudget.Account.API/HomeBudget.Account.API.csproj</projectFile>
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="bde599f0-2bd1-4bc3-b5ed-9ff448781b61" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/HomeBudget.Core/IAssemblyMarker.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeBudget.Integration/EventServiceBus.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeBudget.Integration/IAssemblyMarker.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeBudget.MonthBudget.API/DomainEventsHandlers/FinOperationAddedDomainEventHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeBudget.MonthBudget.Domain/IAssemblyMarker.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeBudget.MonthBudget.Infrastructure/IAssemblyMarker.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeBudget.MonthBudget.Infrastructure/MonthBudgetRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HomeBudget/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HomeBudget/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HomeBudget/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HomeBudget/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeBudget.Account.API/HomeBudget.Account.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/HomeBudget.Account.API/HomeBudget.Account.API.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeBudget.Integration/HomeBudget.Integration.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/HomeBudget.Integration/HomeBudget.Integration.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeBudget.MonthBudget.API/Controllers/WeatherForecastController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HomeBudget.MonthBudget.API/Controllers/WeatherForecastController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeBudget.MonthBudget.API/DomainEventsHandlers/FinOperationAddedDomainEvent.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/HomeBudget.MonthBudget.API/HomeBudget.MonthBudget.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/HomeBudget.MonthBudget.API/HomeBudget.MonthBudget.API.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeBudget.MonthBudget.Domain/HomeBudget.MonthBudget.Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/HomeBudget.MonthBudget.Domain/HomeBudget.MonthBudget.Domain.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeBudget.MonthBudget.Infrastructure/HomeBudget.MonthBudget.Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/HomeBudget.MonthBudget.Infrastructure/HomeBudget.MonthBudget.Infrastructure.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeBudget.sln" beforeDir="false" afterPath="$PROJECT_DIR$/HomeBudget.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeBudget.MonthBudget.API/Integration/MonthBudgetIntegrationService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HomeBudget.MonthBudget.API/Integration/MonthBudgetIntegrationService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeBudget.MonthBudget.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HomeBudget.MonthBudget.API/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeBudget.MonthBudget.API/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HomeBudget.MonthBudget.API/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeBudget.MonthBudget.API/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/HomeBudget.MonthBudget.API/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeBudget.MonthBudget.Domain/Aggregates/MonthBudgetAggregate/IMonthBudgetRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HomeBudget.MonthBudget.Domain/Aggregates/MonthBudgetAggregate/IMonthBudgetRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeBudget.MonthBudget.Domain/Aggregates/MonthBudgetAggregate/MonthBudget.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HomeBudget.MonthBudget.Domain/Aggregates/MonthBudgetAggregate/MonthBudget.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeBudget.MonthBudget.Domain/Events/FinOperationAddedDomainEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HomeBudget.MonthBudget.Domain/Events/FinOperationAddedDomainEvent.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,26 +57,11 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/760DCDFB-2F2B-4C8D-9D3B-A922FA70B507/231/EntityEntry`.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3834795B-F41B-4E62-8161-509ECA0F5822/16/760cf51f/INotification.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/C7ACD84E-BA2C-4D6F-B270-CCBF66577275/A/ServiceProvider.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/HomeBudget.Logic.Core/Impl/ValueObject.cs" />
-        <option value="$PROJECT_DIR$/HomeBudget.Logic.Models/Aggregates/MonthBudgetAggregate/FinOperationValue.cs" />
-        <option value="$PROJECT_DIR$/HomeBudget.DataAccess.MonthBudgetDataAccess/FinOperationEntityTypeConfiguration.cs" />
-        <option value="$PROJECT_DIR$/HomeBudget.Logic.Core/IValueObject.cs" />
-        <option value="$PROJECT_DIR$/HomeBudget.Logic.Models/Aggregates/MonthBudgetAggregate/BudgetPlan.cs" />
-        <option value="$PROJECT_DIR$/HomeBudget.Logic.Models/Aggregates/MonthBudgetAggregate/BudgetCategory.cs" />
-        <option value="$PROJECT_DIR$/HomeBudget.Account.Domain/Aggregates/TransferAggregate/TransferValue.cs" />
-        <option value="$PROJECT_DIR$/HomeBudget.Account.Infrastructure/AccountContext.cs" />
-        <option value="$PROJECT_DIR$/HomeBudget.DataAccess.MonthBudgetDataAccess/MonthBudgetEntityTypeConfiguration.cs" />
-        <option value="$PROJECT_DIR$/HomeBudget.Account.Domain/Aggregates/AccountAggregate/Account.cs" />
-        <option value="$PROJECT_DIR$/HomeBudget.Account.Infrastructure/AccountEntityTypeConfiguration.cs" />
-        <option value="$PROJECT_DIR$/HomeBudget.Logic.Models/Aggregates/MonthBudgetAggregate/FinOperation.cs" />
-        <option value="$PROJECT_DIR$/HomeBudget.API/Controllers/WeatherForecastController.cs" />
-        <option value="$PROJECT_DIR$/HomeBudget.Integration/Class1.cs" />
-        <option value="$PROJECT_DIR$/HomeBudget.Account.API/Startup.cs" />
-        <option value="$PROJECT_DIR$/HomeBudget.Logic.Models/Events/FinOperationAdded.cs" />
         <option value="$PROJECT_DIR$/HomeBudget.Logic.Models/Events/FinOperationEvent.cs" />
         <option value="$PROJECT_DIR$/HomeBudget.Integration/Publisher.cs" />
         <option value="$PROJECT_DIR$/HomeBudget.Integration/Dispatcher.cs" />
@@ -77,10 +93,26 @@
         <option value="$PROJECT_DIR$/HomeBudget.API/Integration/MonthBudgetIntegrationService.cs" />
         <option value="$PROJECT_DIR$/HomeBudget.API/Integration/TransactionBehaviour.cs" />
         <option value="$PROJECT_DIR$/HomeBudget.API/DomainEventsHandlers/FinOperationAddedDomainEvent.cs" />
-        <option value="$PROJECT_DIR$/HomeBudget.Integration/DomainEventDispatcher.cs" />
         <option value="$PROJECT_DIR$/HomeBudget.Core/IAggregateRoot.cs" />
         <option value="$PROJECT_DIR$/HomeBudget.Account.API/HomeBudget.Account.API.csproj" />
         <option value="$PROJECT_DIR$/HomeBudget.MonthBudget.Infrastructure/MonthBudgetContext.cs" />
+        <option value="$PROJECT_DIR$/HomeBudget.MonthBudget.Domain/IAssemblyMarker.cs" />
+        <option value="$PROJECT_DIR$/HomeBudget.Core/IAssemblyMarker.cs" />
+        <option value="$PROJECT_DIR$/HomeBudget.Integration/IAssemblyMarker.cs" />
+        <option value="$PROJECT_DIR$/HomeBudget.MonthBudget.Infrastructure/IAssemblyMarker.cs" />
+        <option value="$PROJECT_DIR$/HomeBudget.MonthBudget.API/Program.cs" />
+        <option value="$PROJECT_DIR$/HomeBudget.MonthBudget.API/Integration/MonthBudgetIntegrationService.cs" />
+        <option value="$PROJECT_DIR$/HomeBudget.Integration/EventServiceBus.cs" />
+        <option value="$PROJECT_DIR$/HomeBudget.MonthBudget.API/appsettings.json" />
+        <option value="$PROJECT_DIR$/HomeBudget.MonthBudget.Domain/Aggregates/MonthBudgetAggregate/MonthBudget.cs" />
+        <option value="$PROJECT_DIR$/HomeBudget.MonthBudget.Domain/Events/FinOperationAddedDomainEvent.cs" />
+        <option value="$PROJECT_DIR$/HomeBudget.MonthBudget.API/DomainEventsHandlers/FinOperationAddedDomainEvent.cs" />
+        <option value="$PROJECT_DIR$/HomeBudget.MonthBudget.API/Startup.cs" />
+        <option value="$PROJECT_DIR$/HomeBudget.MonthBudget.Domain/Aggregates/MonthBudgetAggregate/IMonthBudgetRepository.cs" />
+        <option value="$PROJECT_DIR$/HomeBudget.MonthBudget.API/DomainEventsHandlers/FinOperationAddedDomainEventHandler.cs" />
+        <option value="$PROJECT_DIR$/HomeBudget.Integration/DomainEventDispatcher.cs" />
+        <option value="$PROJECT_DIR$/HomeBudget.MonthBudget.API/Controllers/WeatherForecastController.cs" />
+        <option value="$PROJECT_DIR$/HomeBudget.MonthBudget.Infrastructure/MonthBudgetRepository.cs" />
       </list>
     </option>
   </component>
@@ -91,14 +123,14 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3501006" />
-    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.3002012" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34995976" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30008045" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.HomeBudget.Account.API">
+  <component name="RunManager" selected=".NET Launch Settings Profile.HomeBudget.MonthBudget.API: HomeBudget.API">
     <configuration name="HomeBudget.Account.API" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/HomeBudget.Account.API/HomeBudget.Account.API.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
@@ -130,8 +162,8 @@
       </method>
     </configuration>
     <configuration name="HomeBudget.MonthBudget.API: HomeBudget.API" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/HomeBudget.API/HomeBudget.MonthBudget.API.csproj" />
-      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/HomeBudget.MonthBudget.API/HomeBudget.MonthBudget.API.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v5.0" />
       <option name="LAUNCH_PROFILE_NAME" value="HomeBudget.API" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
@@ -200,7 +232,7 @@
       <updated>1604410265785</updated>
       <workItem from="1604410270738" duration="13997000" />
       <workItem from="1604511947718" duration="10040000" />
-      <workItem from="1604565660751" duration="736000" />
+      <workItem from="1604565660751" duration="13379000" />
     </task>
     <servers />
   </component>
@@ -209,6 +241,17 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
@@ -217,125 +260,191 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1026" y="562" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.0.2560.1400@0.0.2560.1400" timestamp="1604566040441" />
-    <state width="2517" height="423" key="GridCell.Tab.0.bottom" timestamp="1604492591451">
+    <state width="448" height="464" key="DebuggerActiveHint" timestamp="1604873493025">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="423" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604444137547" />
+    <state width="448" height="464" key="DebuggerActiveHint/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604873493025" />
+    <state width="2517" height="518" key="GridCell.Tab.0.bottom" timestamp="1604873763408">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="518" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604873763408" />
     <state width="2517" height="423" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1604492591451" />
-    <state width="2517" height="423" key="GridCell.Tab.0.center" timestamp="1604492591451">
+    <state width="2517" height="518" key="GridCell.Tab.0.center" timestamp="1604873763408">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="423" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604444137547" />
+    <state width="2517" height="518" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604873763408" />
     <state width="2517" height="423" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1604492591451" />
-    <state width="2517" height="423" key="GridCell.Tab.0.left" timestamp="1604492591451">
+    <state width="2517" height="518" key="GridCell.Tab.0.left" timestamp="1604873763408">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="423" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604444137547" />
+    <state width="2517" height="518" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604873763408" />
     <state width="2517" height="423" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1604492591451" />
-    <state width="2517" height="423" key="GridCell.Tab.0.right" timestamp="1604492591451">
+    <state width="2517" height="518" key="GridCell.Tab.0.right" timestamp="1604873763408">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="423" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604444137547" />
+    <state width="2517" height="518" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604873763408" />
     <state width="2517" height="423" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1604492591451" />
-    <state width="2516" height="546" key="GridCell.Tab.1.bottom" timestamp="1604492591449">
+    <state width="2517" height="518" key="GridCell.Tab.1.bottom" timestamp="1604873766845">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2516" height="546" key="GridCell.Tab.1.bottom/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604439519572" />
+    <state width="2517" height="518" key="GridCell.Tab.1.bottom/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604873766845" />
     <state width="2516" height="546" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1604492591449" />
-    <state width="2516" height="546" key="GridCell.Tab.1.center" timestamp="1604492591449">
+    <state width="2517" height="518" key="GridCell.Tab.1.center" timestamp="1604873766845">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2516" height="546" key="GridCell.Tab.1.center/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604439519572" />
+    <state width="2517" height="518" key="GridCell.Tab.1.center/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604873766845" />
     <state width="2516" height="546" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1604492591449" />
-    <state width="2516" height="546" key="GridCell.Tab.1.left" timestamp="1604492591449">
+    <state width="2517" height="518" key="GridCell.Tab.1.left" timestamp="1604873766845">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2516" height="546" key="GridCell.Tab.1.left/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604439519572" />
+    <state width="2517" height="518" key="GridCell.Tab.1.left/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604873766845" />
     <state width="2516" height="546" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1604492591449" />
-    <state width="2516" height="546" key="GridCell.Tab.1.right" timestamp="1604492591449">
+    <state width="2517" height="518" key="GridCell.Tab.1.right" timestamp="1604873766845">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2516" height="546" key="GridCell.Tab.1.right/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604439519572" />
+    <state width="2517" height="518" key="GridCell.Tab.1.right/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604873766845" />
     <state width="2516" height="546" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1604492591449" />
-    <state width="2516" height="546" key="GridCell.Tab.2.bottom" timestamp="1604492591449">
+    <state width="2517" height="518" key="GridCell.Tab.2.bottom" timestamp="1604873763269">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2516" height="546" key="GridCell.Tab.2.bottom/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604439519572" />
+    <state width="2517" height="518" key="GridCell.Tab.2.bottom/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604873763269" />
     <state width="2516" height="546" key="GridCell.Tab.2.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1604492591449" />
-    <state width="2516" height="546" key="GridCell.Tab.2.center" timestamp="1604492591449">
+    <state width="2517" height="518" key="GridCell.Tab.2.center" timestamp="1604873763269">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2516" height="546" key="GridCell.Tab.2.center/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604439519572" />
+    <state width="2517" height="518" key="GridCell.Tab.2.center/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604873763269" />
     <state width="2516" height="546" key="GridCell.Tab.2.center/0.0.2560.1400@0.0.2560.1400" timestamp="1604492591449" />
-    <state width="2516" height="546" key="GridCell.Tab.2.left" timestamp="1604492591449">
+    <state width="2517" height="518" key="GridCell.Tab.2.left" timestamp="1604873763269">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2516" height="546" key="GridCell.Tab.2.left/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604439519572" />
+    <state width="2517" height="518" key="GridCell.Tab.2.left/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604873763269" />
     <state width="2516" height="546" key="GridCell.Tab.2.left/0.0.2560.1400@0.0.2560.1400" timestamp="1604492591449" />
-    <state width="2516" height="546" key="GridCell.Tab.2.right" timestamp="1604492591449">
+    <state width="2517" height="518" key="GridCell.Tab.2.right" timestamp="1604873763269">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2516" height="546" key="GridCell.Tab.2.right/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604439519572" />
+    <state width="2517" height="518" key="GridCell.Tab.2.right/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604873763269" />
     <state width="2516" height="546" key="GridCell.Tab.2.right/0.0.2560.1400@0.0.2560.1400" timestamp="1604492591449" />
-    <state width="2516" height="546" key="GridCell.Tab.3.bottom" timestamp="1604492591449">
+    <state width="2517" height="518" key="GridCell.Tab.3.bottom" timestamp="1604873763269">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2516" height="546" key="GridCell.Tab.3.bottom/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604439519572" />
+    <state width="2517" height="518" key="GridCell.Tab.3.bottom/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604873763269" />
     <state width="2516" height="546" key="GridCell.Tab.3.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1604492591449" />
-    <state width="2516" height="546" key="GridCell.Tab.3.center" timestamp="1604492591449">
+    <state width="2517" height="518" key="GridCell.Tab.3.center" timestamp="1604873763269">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2516" height="546" key="GridCell.Tab.3.center/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604439519572" />
+    <state width="2517" height="518" key="GridCell.Tab.3.center/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604873763269" />
     <state width="2516" height="546" key="GridCell.Tab.3.center/0.0.2560.1400@0.0.2560.1400" timestamp="1604492591449" />
-    <state width="2516" height="546" key="GridCell.Tab.3.left" timestamp="1604492591449">
+    <state width="2517" height="518" key="GridCell.Tab.3.left" timestamp="1604873763269">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2516" height="546" key="GridCell.Tab.3.left/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604439519572" />
+    <state width="2517" height="518" key="GridCell.Tab.3.left/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604873763269" />
     <state width="2516" height="546" key="GridCell.Tab.3.left/0.0.2560.1400@0.0.2560.1400" timestamp="1604492591449" />
-    <state width="2516" height="546" key="GridCell.Tab.3.right" timestamp="1604492591449">
+    <state width="2517" height="518" key="GridCell.Tab.3.right" timestamp="1604873763269">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2516" height="546" key="GridCell.Tab.3.right/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604439519572" />
+    <state width="2517" height="518" key="GridCell.Tab.3.right/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604873763269" />
     <state width="2516" height="546" key="GridCell.Tab.3.right/0.0.2560.1400@0.0.2560.1400" timestamp="1604492591449" />
-    <state width="2516" height="546" key="GridCell.Tab.4.bottom" timestamp="1604492591449">
+    <state width="2517" height="518" key="GridCell.Tab.4.bottom" timestamp="1604873763269">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2516" height="546" key="GridCell.Tab.4.bottom/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604439519572" />
+    <state width="2517" height="518" key="GridCell.Tab.4.bottom/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604873763269" />
     <state width="2516" height="546" key="GridCell.Tab.4.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1604492591449" />
-    <state width="2516" height="546" key="GridCell.Tab.4.center" timestamp="1604492591449">
+    <state width="2517" height="518" key="GridCell.Tab.4.center" timestamp="1604873763269">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2516" height="546" key="GridCell.Tab.4.center/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604439519572" />
+    <state width="2517" height="518" key="GridCell.Tab.4.center/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604873763269" />
     <state width="2516" height="546" key="GridCell.Tab.4.center/0.0.2560.1400@0.0.2560.1400" timestamp="1604492591449" />
-    <state width="2516" height="546" key="GridCell.Tab.4.left" timestamp="1604492591449">
+    <state width="2517" height="518" key="GridCell.Tab.4.left" timestamp="1604873763269">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2516" height="546" key="GridCell.Tab.4.left/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604439519572" />
+    <state width="2517" height="518" key="GridCell.Tab.4.left/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604873763269" />
     <state width="2516" height="546" key="GridCell.Tab.4.left/0.0.2560.1400@0.0.2560.1400" timestamp="1604492591449" />
-    <state width="2516" height="546" key="GridCell.Tab.4.right" timestamp="1604492591449">
+    <state width="2517" height="518" key="GridCell.Tab.4.right" timestamp="1604873763269">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2516" height="546" key="GridCell.Tab.4.right/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604439519572" />
+    <state width="2517" height="518" key="GridCell.Tab.4.right/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604873763269" />
     <state width="2516" height="546" key="GridCell.Tab.4.right/0.0.2560.1400@0.0.2560.1400" timestamp="1604492591449" />
     <state x="872" y="451" key="Rider.ProjectTemplateDialog.Size" timestamp="1604440816464">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="872" y="451" key="Rider.ProjectTemplateDialog.Size/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604440816464" />
-    <state x="983" y="469" key="RiderGenerateDialog" timestamp="1604517702474">
+    <state x="983" y="469" key="RiderGenerateDialog" timestamp="1604871939696">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="983" y="469" key="RiderGenerateDialog/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604517702474" />
+    <state x="983" y="469" key="RiderGenerateDialog/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604871939696" />
     <state x="781" y="344" key="SettingsEditor" timestamp="1604410346423">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="781" y="344" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1604410346423" />
+    <state width="561" height="446" key="SwitcherDM" timestamp="1604765711129">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="561" height="446" key="SwitcherDM/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604765711129" />
     <state x="901" y="319" width="758" height="801" key="find.popup" timestamp="1604416564220">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="901" y="319" width="758" height="801" key="find.popup/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604416564220" />
-    <state x="943" y="329" width="672" height="678" key="search.everywhere.popup" timestamp="1604514192863">
+    <state x="943" y="329" width="672" height="678" key="search.everywhere.popup" timestamp="1604766954711">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="943" y="329" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604514192863" />
+    <state x="943" y="329" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604766954711" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/HomeBudget.MonthBudget.API/Integration/MonthBudgetIntegrationService.cs</url>
+          <line>54</line>
+          <properties documentPath="C:\Users\p_pie\source\repos\HomeBudget\HomeBudget.MonthBudget.API\Integration\MonthBudgetIntegrationService.cs" initialLine="54">
+            <startOffsets>
+              <option value="2215" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2322" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/HomeBudget.MonthBudget.API/DomainEventsHandlers/FinOperationAddedDomainEventHandler.cs</url>
+          <line>33</line>
+          <properties documentPath="C:\Users\p_pie\source\repos\HomeBudget\HomeBudget.MonthBudget.API\DomainEventsHandlers\FinOperationAddedDomainEventHandler.cs" initialLine="33">
+            <startOffsets>
+              <option value="1374" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1631" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/HomeBudget.MonthBudget.API/DomainEventsHandlers/FinOperationAddedDomainEventHandler.cs</url>
+          <line>29</line>
+          <properties documentPath="C:\Users\p_pie\source\repos\HomeBudget\HomeBudget.MonthBudget.API\DomainEventsHandlers\FinOperationAddedDomainEventHandler.cs" initialLine="29">
+            <startOffsets>
+              <option value="1196" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1258" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/HomeBudget.MonthBudget.Domain/Aggregates/MonthBudgetAggregate/MonthBudget.cs</url>
+          <line>39</line>
+          <properties documentPath="C:\Users\p_pie\source\repos\HomeBudget\HomeBudget.MonthBudget.Domain\Aggregates\MonthBudgetAggregate\MonthBudget.cs" initialLine="39">
+            <startOffsets>
+              <option value="1834" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1867" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
