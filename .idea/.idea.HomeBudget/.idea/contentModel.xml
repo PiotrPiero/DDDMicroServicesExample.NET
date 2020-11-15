@@ -106,12 +106,13 @@
         <e p="IIntegrationService.cs" t="Include" />
         <e p="Logging" t="Include">
           <e p="EventStatus.cs" t="Include" />
-          <e p="IIntegrationEventLogger.cs" t="Include" />
+          <e p="IIntegrationEventService.cs" t="Include" />
           <e p="IntegrationEventLog.cs" t="Include" />
           <e p="IntegrationEventLogContext.cs" t="Include" />
           <e p="IntegrationEventLogEntityTypeConfiguration.cs" t="Include" />
-          <e p="IntegrationEventLogger.cs" t="Include" />
+          <e p="IntegrationEventService.cs" t="Include" />
         </e>
+        <e p="LoggingBehaviour.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="net5.0" t="Include">
@@ -124,6 +125,10 @@
         <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Commands" t="Include">
+          <e p="AddFinOperationCommand.cs" t="Include" />
+          <e p="AddFinOperationCommandHandler.cs" t="Include" />
+        </e>
         <e p="Controllers" t="Include">
           <e p="WeatherForecastController.cs" t="Include" />
         </e>
@@ -177,6 +182,7 @@
       </e>
       <e p="HomeBudget.MonthBudget.Infrastructure" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="BudgetCategoryEntityTypeConfiguration.cs" t="Include" />
         <e p="BudgetPlanEntityTypeConfiguration.cs" t="Include" />
         <e p="FinOperationEntityTypeConfiguration.cs" t="Include" />
         <e p="HomeBudget.MonthBudget.Infrastructure.csproj" t="IncludeRecursive" />

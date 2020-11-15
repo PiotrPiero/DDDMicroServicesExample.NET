@@ -10,4 +10,8 @@
     <ProjectReference Include="..\HomeBudget.Core\HomeBudget.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.0" />
+  </ItemGroup>
+
 </Project>

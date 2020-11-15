@@ -5,7 +5,9 @@ namespace HomeBudget.MonthBudget.Domain.Aggregates.MonthBudgetAggregate
 {
     public interface IMonthBudgetRepository
     {
-        void AddOrUpdate(FinOperation operation);
+        Task<MonthBudget> GetById(int id);
+        Task<BudgetCategory> GetBudgetCategoryById(int id);
+        void AddOrUpdate(MonthBudget monthBudget);
         void Remove(int id);
     }
 }

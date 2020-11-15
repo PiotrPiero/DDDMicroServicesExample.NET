@@ -20,7 +20,7 @@ namespace HomeBudget.Integration.Logging
             Event = @event;
             JsonValue = JsonConvert.SerializeObject(@event);
         }
-        
+        public int Id { get; private set; }
         public Guid EventId { get; private set; }
         public string Name { get; private set; }
         public Guid TransactionId { get; private set; }

@@ -10,14 +10,14 @@ namespace HomeBudget.MonthBudget.API.Integration
 {
     public class MonthBudgetIntegrationService : IIntegrationService
     {
-        private readonly IIntegrationEventLogger _integrationLogger;
+        private readonly IIntegrationEventService _integrationLogger;
         private readonly MonthBudgetContext _monthBudgetContext;
         private readonly IEventBus _eventBus;
         private readonly ILogger<MonthBudgetIntegrationService> _logger;
         
         public MonthBudgetIntegrationService(IEventBus eventBus,
             ILogger<MonthBudgetIntegrationService> logger,
-            IIntegrationEventLogger integrationLogger,
+            IIntegrationEventService integrationLogger,
             MonthBudgetContext monthBudgetContext
             )
         {
@@ -31,21 +31,22 @@ namespace HomeBudget.MonthBudget.API.Integration
         {
             var newEvents = await _integrationLogger.GetAll(transactionId, EventStatus.New);
 
-            foreach (var newEvent in newEvents)
-            {
-                try
+            if(newEvents != null)
+                foreach (var newEvent in newEvents)
                 {
-                    _logger.LogInformation($"Publish integration event with Id: {newEvent.EventId}");
-                    await _integrationLogger.ChangeEventStatus(newEvent.EventId, EventStatus.Pending);
-                    _eventBus.Publish(newEvent.Event);
-                    await _integrationLogger.ChangeEventStatus(newEvent.EventId, EventStatus.Published);
+                    try
+                    {
+                        _logger.LogInformation($"Publish integration event with Id: {newEvent.EventId}");
+                        await _integrationLogger.ChangeEventStatus(newEvent.EventId, EventStatus.Pending);
+                        _eventBus.Publish(newEvent.Event);
+                        await _integrationLogger.ChangeEventStatus(newEvent.EventId, EventStatus.Published);
+                    }
+                    catch (Exception ex)
+                    {
+                        _logger.LogError(ex, $"Error publishing integration event {newEvent.EventId}");
+                        await _integrationLogger.ChangeEventStatus(newEvent.EventId, EventStatus.Failed);
+                    }
                 }
-                catch (Exception ex)
-                {
-                    _logger.LogError(ex, $"Error publishing integration event {newEvent.EventId}");
-                    await _integrationLogger.ChangeEventStatus(newEvent.EventId, EventStatus.Failed);
-                }
-            }
         }
 
         public async Task AddAndSaveEventAsync(IIntegrationEvent integrationEvent)

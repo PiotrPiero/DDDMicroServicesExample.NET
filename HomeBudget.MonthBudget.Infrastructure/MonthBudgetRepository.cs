@@ -18,34 +18,24 @@ namespace HomeBudget.MonthBudget.Infrastructure
             _logger = logger;
         }
 
-        public void AddOrUpdate(FinOperation operation)
+        public Task<Domain.Aggregates.MonthBudgetAggregate.MonthBudget> GetById(int id)
         {
-            if (operation.Id.HasValue)
-            {
-                try
-                {
-                    _ctx.FinOperations.Update(operation);
-                    _ctx.SaveChanges();
-                }
-                catch (Exception ex)
-                {
-                    _logger.LogError(ex, $"Cannot update fin operation for account {operation.AccountName}, operatonId: {operation.Id}");
-                    throw ex;
-                }
-            }
+            return _ctx.MonthBudgets
+                .Include(x => x.FinOperations)
+                .SingleAsync(x => x.Id == id);
+        }
+
+        public Task<BudgetCategory> GetBudgetCategoryById(int id)
+        {
+            return _ctx.BudgetCategories.SingleAsync(x => x.Id == id);
+        }
+
+        public void AddOrUpdate(Domain.Aggregates.MonthBudgetAggregate.MonthBudget monthBudget)
+        {
+            if (monthBudget.Id.HasValue)
+                _ctx.MonthBudgets.Update(monthBudget);
             else
-            {
-                try
-                {
-                    _ctx.FinOperations.Add(operation); 
-                    _ctx.SaveChanges();
-                }
-                catch (Exception ex)
-                {
-                    _logger.LogError(ex, $"Cannot save fin operation for account {operation.AccountName}");
-                    throw ex;
-                }
-            }
+                _ctx.MonthBudgets.Add(monthBudget);
         }
 
         public void Remove(int id)

@@ -6,7 +6,9 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using HomeBudget.Integration;
+using HomeBudget.MonthBudget.API.Commands;
 using MediatR;
 
 namespace HomeBudget.API.Controllers
@@ -15,7 +17,6 @@ namespace HomeBudget.API.Controllers
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
-        MonthBudgetContext _ctx;
         private readonly IMediator _mediator;
 
         private static readonly string[] Summaries = new[]
@@ -28,24 +29,26 @@ namespace HomeBudget.API.Controllers
         public WeatherForecastController(ILogger<WeatherForecastController> logger, MonthBudgetContext ctx, IMediator mediator)
         {
             _logger = logger;
-            _ctx = ctx;
             _mediator = mediator;
         }
 
         [HttpGet]
-        public IEnumerable<MonthBudget.Domain.Aggregates.MonthBudgetAggregate.MonthBudget> Get()
+        public async Task<IEnumerable<MonthBudget.Domain.Aggregates.MonthBudgetAggregate.MonthBudget>> Get()
         {
-            //var r = _ctx.MonthBudgets
-            //    .Include(x => x.FinOperations).ThenInclude(o => o.BudgetCategory)
-            //    .Include(x => x.CategoriesPlans).ThenInclude(o => o.BudgetCategory).ToList();
+            var command = new AddFinOperationCommand()
+            {
+                Value = new FinOperationValue(100, 77),
+                AccountName = "Główne",
+                Type = FinOperationType.Expense,
+                AuthorId = 1,
+                BudgetCategoryId = 1,
+                Name = "a1",
+                Description = "opis2",
+                Created = DateTime.Now,
+                MonthBudgetId = 1
+            };
 
-            var m = _ctx.MonthBudgets.Include(x => x.FinOperations).First();
-
-            // _ctx.Attach(m);
-
-            m.AddOperation(new FinOperationValue(100, 77), "Główne",FinOperationType.Expense, DateTime.Now, 1, _ctx.BudgetCategories.First(), "testowy wydatek 1", "opis");
-
-            _mediator.DispatchDomainEventsAsync(_ctx);
+            await _mediator.Send(command);
             return null;
         }
     }

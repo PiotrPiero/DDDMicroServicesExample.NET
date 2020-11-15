@@ -10,7 +10,8 @@ namespace HomeBudget.Integration.Logging
             builder.ToTable("IntegrationEventLogs", IntegrationEventLogContext.DEFAULT_SCHEMA);
 
             builder
-                .Ignore(x => x.Event);
+                .Ignore(x => x.Event)
+                .HasKey(x => x.Id);
         }
     }
 }

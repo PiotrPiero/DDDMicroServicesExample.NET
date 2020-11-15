@@ -35,8 +35,7 @@ namespace HomeBudget.MonthBudget.Domain.Aggregates.MonthBudgetAggregate
             //todo validation
             var newOperation = FinOperation.New(name, accountName, type, operationDate, budgetCategory, this, authorId, operationValue);
             newOperation.Description = description;
-
-
+            
             _finOperations.Add(newOperation);
 
             DomainEvents.Add(new FinOperationAddedDomainEvent(newOperation, accountName));

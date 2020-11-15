@@ -44,9 +44,12 @@ namespace HomeBudget.MonthBudget.API
             });
             
             services
-                .AddMediatR(Assembly.GetExecutingAssembly())
+                .AddMediatR(typeof(Startup))
                 .Scan(s =>
                 {
+                    s.AddTypes<IIntegrationService, MonthBudgetIntegrationService>().AsImplementedInterfaces().WithScopedLifetime();
+                    s.AddTypes<IEventBus, EventServiceBus>().AsImplementedInterfaces().WithSingletonLifetime();
+                    
                     s
                         .FromAssemblies(
                             typeof(HomeBudget.MonthBudget.Infrastructure.IAssemblyMarker).Assembly
@@ -58,14 +61,7 @@ namespace HomeBudget.MonthBudget.API
                         .AsImplementedInterfaces()
                         .WithTransientLifetime();
 
-                    s.FromAssemblies(typeof(HomeBudget.MonthBudget.Infrastructure.IAssemblyMarker).Assembly)
-                        .AddClasses(c => c.Where(t => t.Name.Contains("Context") || t.Name.Contains("Repository")))
-                        .AsSelf()
-                        .WithScopedLifetime();
-
-                    s.AddTypes<IIntegrationService, MonthBudgetIntegrationService>().AsImplementedInterfaces().WithTransientLifetime();
-                    s.AddTypes<IEventBus, EventServiceBus>().AsImplementedInterfaces().WithTransientLifetime();
-
+                    
                     s.FromAssemblies(typeof(HomeBudget.Integration.IAssemblyMarker).Assembly)
                         .AddClasses(c => c.Where(t => t.Name.Contains("Integration")))
                         .AsImplementedInterfaces()
@@ -73,9 +69,13 @@ namespace HomeBudget.MonthBudget.API
                         
                     s.FromAssemblies(typeof(Startup).Assembly)
                         .AddClasses(c => c.AssignableTo(typeof(INotificationHandler<>)))
+                        .AddClasses(c => c.AssignableTo(typeof(IRequestHandler<>)))
+                        .AddClasses(c => c.AssignableTo(typeof(IRequest)))
                         .AsSelf()
                         .WithTransientLifetime();
                 })
+                .AddTransient(typeof(IPipelineBehavior<,>), typeof(TransactionBehaviour<,>))
+                .AddTransient(typeof(IPipelineBehavior<,>), typeof(LoggingBehavior<,>))
                 .AddControllers()
                 .AddNewtonsoftJson(o => o.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
             

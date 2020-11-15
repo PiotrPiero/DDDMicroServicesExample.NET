@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Storage;
 
 namespace HomeBudget.Integration.Logging
 {
-    public interface IIntegrationEventLogger
+    public interface IIntegrationEventService
     {
         Task<IEnumerable<IntegrationEventLog>> GetAll(Guid transactionId,  EventStatus status);
         Task SaveEventAsync(IIntegrationEvent @event, IDbContextTransaction  transactionContext);

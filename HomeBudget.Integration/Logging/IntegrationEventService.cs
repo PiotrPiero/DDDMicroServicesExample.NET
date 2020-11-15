@@ -9,12 +9,12 @@ using Microsoft.EntityFrameworkCore.Storage;
 
 namespace HomeBudget.Integration.Logging
 {
-    public class IntegrationEventLogger: IIntegrationEventLogger
+    public class IntegrationEventService: IIntegrationEventService
     {
         private readonly IntegrationEventLogContext _ctx;
         private List<Type> _eventTypes;
         
-        public IntegrationEventLogger(IntegrationEventLogContext ctx)
+        public IntegrationEventService(IntegrationEventLogContext ctx)
         {
             _ctx = ctx;
 
@@ -26,11 +26,13 @@ namespace HomeBudget.Integration.Logging
         
         public async Task<IEnumerable<IntegrationEventLog>> GetAll(Guid transactionId, EventStatus status)
         {
-            return await _ctx.IntegrationEventLogs
+            var res = await _ctx.IntegrationEventLogs
                 .Where(x => x.Status == status && x.TransactionId == transactionId)
                 .OrderBy(x => x.Created)
-                .Select(x => x.LoadEventValue(_eventTypes.Find(e => e.FullName == x.Name)))
                 .ToListAsync();
+
+            return res.Select(x => x.LoadEventValue(_eventTypes.Find(e => e.FullName == x.Name)));
+
         }
 
         public Task SaveEventAsync(IIntegrationEvent @event, IDbContextTransaction transactionContext)
@@ -39,8 +41,7 @@ namespace HomeBudget.Integration.Logging
                 throw new ArgumentNullException($"{nameof(@event)},{nameof(transactionContext)}");
             
             var newLog = new IntegrationEventLog(transactionContext.TransactionId, @event);
-
-            _ctx.Database.UseTransaction(transactionContext.GetDbTransaction());
+            
             _ctx.IntegrationEventLogs.Add(newLog);
 
             return _ctx.SaveChangesAsync();

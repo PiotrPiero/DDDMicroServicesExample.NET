@@ -27,36 +27,30 @@ namespace HomeBudget.MonthBudget.API.Integration
         public async Task<TResponse> Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate<TResponse> next)
         {
             var response = default(TResponse);
-            var typeName = request.GetType().GetGenericTypeDefinition().Name;
+            var typeName = request.GetType().Name;
 
             try
             {
                 if (_ctx.Database.CurrentTransaction != null)
-                {
                     return await next();
-                }
 
+                var transaction = _ctx.Database.BeginTransaction();
                 var strategy = _ctx.Database.CreateExecutionStrategy();
 
                 await strategy.ExecuteAsync(async () =>
                 {
-                    Guid transactionId;
+                    _logger.LogInformation(
+                        $"Begin transaction {transaction.TransactionId} for {typeName} ({request})");
 
-                    using (var transaction = await _ctx.Database.BeginTransactionAsync())
-                    {
-                        _logger.LogInformation(
-                            $"Begin transaction {transaction.TransactionId} for {typeName} ({request})");
+                    response = await next();
 
-                        response = await next();
+                    _logger.LogInformation($"Commit transaction {transaction.TransactionId} for {typeName}");
 
-                        _logger.LogInformation($"Commit transaction {transaction.TransactionId} for {typeName}");
-
-                        await _ctx.Database.CommitTransactionAsync();
-
-                        transactionId = transaction.TransactionId;
-                    }
-
-                    await _monthBudgetIntegrationService.PublishEventsThroughEventBusAsync(transactionId);
+                    await _ctx.SaveChangesAsync(true, cancellationToken);
+                    
+                    await transaction.CommitAsync();
+                    await transaction.DisposeAsync();
+                    await _monthBudgetIntegrationService.PublishEventsThroughEventBusAsync(transaction.TransactionId);
                     
                 });
 

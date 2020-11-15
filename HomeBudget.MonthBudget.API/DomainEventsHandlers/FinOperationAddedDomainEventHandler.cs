@@ -27,10 +27,9 @@ namespace HomeBudget.MonthBudget.API.DomainEventsHandlers
         {
             try
             {
-                _monthBudgetRepository.AddOrUpdate(notification.FinOperation);
-
                 _logger.LogInformation($"FinOperationAdded, ID={notification.FinOperation.Id}");
 
+                
                 await _integrationService.AddAndSaveEventAsync(new FinOperationAddedIntegrationEvent(
                     notification.FinOperation.Id.Value,
                     notification.FinOperation.MonthBudget.Id.Value,
