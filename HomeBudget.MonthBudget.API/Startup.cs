@@ -43,13 +43,19 @@ namespace HomeBudget.MonthBudget.API
                 config.AddConsole();
             });
             
+            services.AddSingleton<IEventBus, EventServiceBus>(sp =>
+            {
+                var logger = sp.GetRequiredService<ILogger<EventServiceBus>>();
+
+                return new EventServiceBus(logger, Configuration["rabbit_queue"]);
+            });
+            
             services
                 .AddMediatR(typeof(Startup))
                 .Scan(s =>
                 {
                     s.AddTypes<IIntegrationService, MonthBudgetIntegrationService>().AsImplementedInterfaces().WithScopedLifetime();
-                    s.AddTypes<IEventBus, EventServiceBus>().AsImplementedInterfaces().WithSingletonLifetime();
-                    
+                  
                     s
                         .FromAssemblies(
                             typeof(HomeBudget.MonthBudget.Infrastructure.IAssemblyMarker).Assembly
@@ -60,7 +66,6 @@ namespace HomeBudget.MonthBudget.API
                         .UsingRegistrationStrategy(RegistrationStrategy.Skip)
                         .AsImplementedInterfaces()
                         .WithTransientLifetime();
-
                     
                     s.FromAssemblies(typeof(HomeBudget.Integration.IAssemblyMarker).Assembly)
                         .AddClasses(c => c.Where(t => t.Name.Contains("Integration")))

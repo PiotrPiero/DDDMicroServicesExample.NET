@@ -8,9 +8,11 @@
   <ItemGroup>
     <ProjectReference Include="..\HomeBudget.Account.Domain\HomeBudget.Account.Domain.csproj" />
     <ProjectReference Include="..\HomeBudget.Core\HomeBudget.Core.csproj" />
+    <ProjectReference Include="..\HomeBudget.Integration\HomeBudget.Integration.csproj" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="MediatR" Version="9.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="5.0.0" />
   </ItemGroup>

@@ -36,9 +36,6 @@ namespace HomeBudget.MonthBudget.API.Integration
 
                 var strategy = _ctx.Database.CreateExecutionStrategy();
                 
-                
-                
-
                 await strategy.ExecuteAsync(async () =>
                 {
                     await using (var transaction = await _ctx.Database.BeginTransactionAsync())

@@ -7,6 +7,7 @@ using Newtonsoft.Json;
 using Polly;
 using Polly.Retry;
 using RabbitMQ.Client;
+using RabbitMQ.Client.Events;
 using RabbitMQ.Client.Exceptions;
 
 namespace HomeBudget.Integration
@@ -18,8 +19,9 @@ namespace HomeBudget.Integration
         private readonly ILogger<EventServiceBus> _logger;
         private readonly int _retries;
         private readonly ConnectionFactory _connectionFactory;
+        private readonly string _queueName;
         
-        public EventServiceBus(ILogger<EventServiceBus> logger)
+        public EventServiceBus(ILogger<EventServiceBus> logger, string _queueName)
         {
             _logger = logger;
             _retries = 3;
@@ -45,8 +47,7 @@ namespace HomeBudget.Integration
                     
                     var props = channel.CreateBasicProperties();
                     props.DeliveryMode = 2;
-                    
-                    
+
                     _logger.LogTrace($"Publishing event: {@event.Id}");
 
                     retryPolicy.ExecuteAsync(async () =>
@@ -66,7 +67,26 @@ namespace HomeBudget.Integration
 
         public void Subscribe<T, TH>() where T : IIntegrationEvent where TH : IIntegrationEventHandler<T>
         {
-            throw new System.NotImplementedException();
+            _logger.LogInformation($"Starting consume {nameof(T)}");
+
+            using (var connection = _connectionFactory.CreateConnection())
+            using (var channel = connection.CreateModel())
+            {
+                channel.QueueBind(queue: _queueName,
+                    exchange: "logs",
+                    routingKey: "");
+
+
+                AsyncEventingBasicConsumer consumer = new AsyncEventingBasicConsumer(channel);
+
+                channel.BasicConsume(
+                    queue: _queueName,
+                    autoAck: false,
+                    consumer: consumer
+                );
+                
+                _logger.LogInformation($"Consume started {nameof(T)}");
+            }
         }
 
         public void Unsubscribe<T, TH>() where T : IIntegrationEvent where TH : IIntegrationEventHandler<T>

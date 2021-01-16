@@ -15,7 +15,7 @@ namespace HomeBudget.API.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class WeatherForecastController : ControllerBase
+    public class MonthBudgetController : ControllerBase
     {
         private readonly IMediator _mediator;
 
@@ -24,9 +24,9 @@ namespace HomeBudget.API.Controllers
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
 
-        private readonly ILogger<WeatherForecastController> _logger;
+        private readonly ILogger<MonthBudgetController> _logger;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger, MonthBudgetContext ctx, IMediator mediator)
+        public MonthBudgetController(ILogger<MonthBudgetController> logger, MonthBudgetContext ctx, IMediator mediator)
         {
             _logger = logger;
             _mediator = mediator;

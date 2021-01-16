@@ -20,7 +20,7 @@ namespace HomeBudget.MonthBudget.API.Commands
             var m = await _repository.GetById(request.MonthBudgetId);
             var budgetCategory = await _repository.GetBudgetCategoryById(request.BudgetCategoryId);
             
-            m.AddOperation(new FinOperationValue(100, 77), "Główne",FinOperationType.Expense, DateTime.Now, 1, budgetCategory, "testowy wydatek 1", "opis");
+            m.AddOperation(request.Value, request.AccountName, request.Type, DateTime.Now, request.AuthorId, budgetCategory, request.Name, request.Description);
 
             return Unit.Value;
         }

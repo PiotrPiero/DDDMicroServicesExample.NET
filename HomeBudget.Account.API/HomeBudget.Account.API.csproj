@@ -8,6 +8,7 @@
   <ItemGroup>
     <ProjectReference Include="..\HomeBudget.Account.Infrastructure\HomeBudget.Account.Infrastructure.csproj" />
     <ProjectReference Include="..\HomeBudget.Core\HomeBudget.Core.csproj" />
+    <ProjectReference Include="..\HomeBudget.MonthBudget.API\HomeBudget.MonthBudget.API.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -17,6 +18,10 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="5.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="5.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
+    <PackageReference Include="RabbitMQ.Client" Version="6.2.1" />
+    <PackageReference Include="Scrutor" Version="3.3.0" />
   </ItemGroup>
 
 
